@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Lecture"
-description: "Lecture notes by MEDIVIEWSOFT"
+title: "Publication"
+description: "Publication by MEDIVIEWSOFT"
 header-img: "img/about-bg.jpg"
 ---
 
 {% for category in site.categories %}
 {% for posts in category %}
 {% for post in posts %}
-{% if post.category == 'lecture' %}
+{% if post.category == 'publication' %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            {{ post.title }}
