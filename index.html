@@ -1,36 +1,89 @@
 ---
 layout: page
-description: "A Clean Blog Theme by Start Bootstrap"
+description: "About page"
 ---
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+<!-- Introduction Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">About Us
+            <small>It's Nice to Meet You!</small>
+        </h1>
+				<p>
+				Mediviewsoft, located at CSE department in Yonsei university, aims to provide networking opportunities for transparent communications on recent developments, emerging issues and challenging problems in mathematic-based medical imaging area. 
+				Mediviewsoft helps its members launch venture-ready startups. and  regularly organize events and meetings to pitch member's venture idea.	&mdash; Haeeun Han
+				</p>
+    </div>
 </div>
-<hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!-- Team Members Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Our Team</h2>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="hnkwon.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_hnk.jpg" alt="" border="0"/></a>
+        <h3>Hyeuknam Kwon
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="khlee.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_khl.jpg" alt="" border="0"/></a>
+        <h3>Kyoung Hun Lee
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="jsjang.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_jsj.jpg" alt="" border="0"/></a>
+        <h3>Jaeseong Jang
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="ldzhou.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_ldz.jpg" alt="" border="0"/></a>
+        <h3>Liangdong Zhou
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="bkkim.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_bkk.jpg" alt="" border="0"/></a>
+        <h3>Bukweon Kim
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="smlee.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_sml.jpg" alt="" border="0"/></a>
+        <h3>Sung Min Lee
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="hpkim.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_hpk.jpg" alt="" border="0"/></a>
+        <h3>Hwa Pyung Kim
+            <small>Ph.D</small>
+        </h3>
+        <p>Engineer</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center">
+      <a href="hehan.html" target="_self">
+      <img class="img-circle img-responsive img-center" img src="{{ site.url }}/img/profile/people_heh.jpg" alt="" border="0"/></a>
+          <h3>Haeeun Han
+            <small></small>
+        </h3>
+        <p>CEO</p>
+    </div>
+</div>
+
+
