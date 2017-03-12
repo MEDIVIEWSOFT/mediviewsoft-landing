@@ -1,7 +1,7 @@
 ---
-layout: page
-title: "Conference"
-description: "Conference hosted by MEDIVIEWSOFT"
+layout: team
+title: "Team"
+description: "MEDIVIEWSOFT Team"
 header-img: "img/about-bg.jpg"
 ---
 
@@ -9,19 +9,31 @@ header-img: "img/about-bg.jpg"
 {% for posts in category %}
 {% for post in posts %}
 {% if post.category == 'team' %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+<div class="row team-preview">
+        <img class="col-lg-3 col-sm-5 profile-img img-circle img-responsive" src="{{ post.profile | prepend: '/img/profile/' | prepend: site.url }}" />
+        <div class="col-lg-9 col-sm-7 profile">
+          <h2 class="post-title"> 
+            {% if post.degree %}
+            <small class="team-degree">
+                {{ post.degree }}
+            </small>
+            {% endif %}
+            <a href="{{ post.url | prepend: site.baseurl }}"> 
+              {{ post.title }}
+            </a>
+            {% if post.homepage %}
+            <small class="team-homepage">
+              <a href="{{ post.homepage }}"> <i class="fa fa-home" aria-hidden="true"></i> </a>
+            </small>
+            {% endif %}
+          </h2>
+          {% if post.research-area %}
+          <p class="team-research-area">
+             Research Area : {{ post.research-area }}
+          </p>
+          {% endif %}
+        </div>
 </div>
-<hr>
 {% endif %}
 {% endfor %}
 {% endfor %}

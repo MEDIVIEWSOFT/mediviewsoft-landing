@@ -76,6 +76,14 @@ hr.small {
 .people-name {
   font-size: 22px;
 }
+.team-preview {
+  padding-bottom: 15px;
+}
+.team-research-area {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 30px 0;
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -253,10 +261,47 @@ hr.small {
   color: #0085a1;
   text-decoration: underline;
 }
+.team-preview > a {
+  color: #404040;
+}
+.team-preview > a:hover,
+.team-preview > a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+.team-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-preview > a > .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.team-preview > .post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+.team-preview > .post-meta > a {
+  text-decoration: none;
+  color: #404040;
+}
+.team-preview > .post-meta > a:hover,
+.team-preview > .post-meta > a:focus {
+  color: #0085a1;
+  text-decoration: none;
+}
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
   }
+  .team-preview > a > .post-title {
+    font-size: 36px;
+  }
+
 }
 .section-heading {
   font-size: 36px;
