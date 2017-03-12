@@ -269,28 +269,36 @@ hr.small {
   text-decoration: none;
   color: #0085a1;
 }
-.team-preview > a > .post-title {
+.team-preview > .profile > .post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
+  text-decoration: none;
 }
-.team-preview > a > .post-subtitle {
+.team-preview > .profile > .post-title > a{
+  text-decoration: none;
+}
+.team-preview > .profile > .post-title > a:hover,
+.team-preview > .profile > .post-title > a:focus {
+  text-decoration: none;
+}
+.team-preview > .profile > .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.team-preview > .post-meta {
+.team-preview > .profile > .post-meta {
   color: #808080;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
-.team-preview > .post-meta > a {
+.team-preview > .profile > .post-meta > a {
   text-decoration: none;
   color: #404040;
 }
-.team-preview > .post-meta > a:hover,
-.team-preview > .post-meta > a:focus {
+.team-preview > .profile > .post-meta > a:hover,
+.team-preview > .profile > .post-meta > a:focus {
   color: #0085a1;
   text-decoration: none;
 }
