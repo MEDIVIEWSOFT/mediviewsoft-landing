@@ -56,22 +56,18 @@ hr.small {
   border-width: 4px;
   border-color: white;
 }
-.navbar-custom {
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
+.navbar-brand img {
+  height: 1em; 
+  float: left;
+  margin-right: 5px;
+  cursor: auto;
 }
-.navbar-custom .navbar-brand {
-  font-weight: 800;
+.navbar-brand img:hover,
+.navbar-brand img:focus {
+  cursor: auto;
 }
-.navbar-custom .nav li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
+.navbar-brand a {
+  float: left;
 }
 .people-name {
   font-size: 22px;
