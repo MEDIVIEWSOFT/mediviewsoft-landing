@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Conference"
-description: "Conference hosted by MEDIVIEWSOFT"
+title: "Event"
+description: "Events hosted by MEDIVIEWSOFT"
 header-img: "img/about-bg.jpg"
 ---
 
 {% for category in site.categories %}
 {% for posts in category %}
 {% for post in posts %}
-{% if post.category == 'conference' %}
+{% if post.category == 'event' %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            {{ post.title }}
